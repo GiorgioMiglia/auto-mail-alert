@@ -8,8 +8,7 @@ dish = "[<h2>ORARIO DI PROSSIMA PUBBLICAZIONE</h2>]"  #a HTML line that will cha
 
 #the next 2 lines convert dish to a bs4 element resultSet object
 dish = BeautifulSoup(dish, 'html.parser')
-dish = dish.find_all('h2') #tutto sto casino per avere oggetti dello stesso tipo
-
+dish = dish.find_all('h2')
 
 #get the HTML of the page, look for the line saved in the dish variable and return true if found
 def checkSite():
