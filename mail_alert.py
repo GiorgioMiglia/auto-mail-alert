@@ -27,6 +27,6 @@ def sendMail():
     sender.quit()
 
 #check every 10 minutes if there are changes, 
-while(checkSite):
+while(checkSite()):
     time.sleep(600)
 sendMail()
